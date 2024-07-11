@@ -54,7 +54,100 @@ const selectTimeBox = 'div[class="boxCalendarExpiredHandleNomal d-flex justify-c
 const selectHrBox = 'div[class="flatpickr-calendar hasTime noCalendar animate arrowTop arrowRight open"] input[class="numInput flatpickr-hour"]'
 const selectMinBox = 'div[class="flatpickr-calendar hasTime noCalendar animate arrowTop arrowRight open"] input[class="numInput flatpickr-minute"]'
 const reminderTimeTickBox = 'input[id="ckb25311_0"]'
-const reminderTimeList = ''
+const reminderTimeField = 'div[class="parent-input pl-4 ml-2 mt-2 time2T"] span[class="select2-selection select2-selection--multiple bizfly-multiple-selection"]'
+const reminderTimeList = '.select2-results'
+const reminderTimeOptions = '.select2-results > li'
+const remiderProgressTickBox = 'input[id="ckb25321_0"]'
+const reminderProgressField = 'div[class="parent-input pl-4 ml-2 mt-2 time2T"] span[class="select2-selection select2-selection--multiple bizfly-multiple-selection"]'
+const reminderProgressList = '#select2--results'
+const reminderProgressOptions = '#select2--results > li'
+const expireDateCancelBtn = 'div[class="d-flex justify-content-end my-3"] a[class="btn-bg-w btn-bizfly mr-3 bl-cancel-choose-end-date-create-ticket"]'
+const expireDateSaveBtn = 'div[class="d-flex justify-content-end my-3"] a[class="btn-bg-w btn-bizfly mr-3 bl-cancel-choose-end-date-create-ticket"] ~ a'
+//quay tro lai man tao ticket moi 
+const expireDateField = 'input[name="expire_time_ticket"]'
+const priorityField = 'div[class="form-group do_uu_tien"] span[class="select2-selection select2-selection--single bizfly-single-selection"]' 
+const priorityList = '#select2-priority_ticket-results'
+const priortiyOptions = '#select2-priority_ticket-results > li'
+const createNewTicketBtn = 'button[class="btn btn-bizfly btn-create-business createdTicket"]'
+const cancelCreateNewTicketBtn = 'button[class="btn btn-bizfly btn-close mr-3 cancelCreatedTicket"]'
+
+export class BizTicketPage {
+    get getUrl() {
+        return url
+    }
+
+    get getCreateTicketBtn() {
+        return createTicketBtn;
+    }
+
+    get getCreateTicketWindow() {
+        return createTicketWindow
+    }
+
+    get getBizIdBtn() {
+        return bizIdBtn
+    }
+
+    get getBizIdDropdown() {
+        return bizIdDropdown
+    }
+
+    get getBizIdSearchBar() {
+        return bizIdSearchBar
+    }
+
+    get getBizIdList() {
+        return bizIdList;
+    }
+
+    get getCurrentSelectedBizId() {
+        return currentSelectedBizId
+    }
+
+    get getOtherBizId() {
+        return otherBizId
+    }
+
+    get getTargetBizId() {
+        return targetBizId
+    }
+
+    get getTypeTicketBtn() {
+        return typeTicketBtn
+    }
+
+    get getTypeTicketSearchBar() {
+        return typeTicketSearchBar
+    }
+
+    get getTypeTicketDropdow() {
+        return typeTicketDropdown
+    }
+
+    get getTypeTicketList() {
+        return typeTicketList
+    }
+
+    get getRecommendedTypeTicket() {
+        return recommendedTypeTicket
+    }
+
+    get getOtherTypeTicket() {
+        return otherTypeTicket
+    }
+
+    get getTargetTypeTicket() {
+        return targetTypeTicket
+    }
+
+    get getTicketName() {
+        return ticketName
+    }
+
+    
+
+
+}
 
 
 
