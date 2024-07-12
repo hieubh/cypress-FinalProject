@@ -6,13 +6,13 @@ const bizIdBtn = 'input[name="business_id"]'
 const bizIdDropdown = 'div[class="dropdown-menu show"]'
 const bizIdSearchBar = 'div[class="dropdown-menu show"] input[placeholder="Tìm kiếm"]'
 const bizIdList = 'div[class="dropdown-menu show"] .list-group'
-const currentSelectedBizId = 'div[class="dropdown-menu show"] .list-group > div:first-child'
+// const currentSelectedBizId = 'div[class="dropdown-menu show"] .list-group > div:first-child'
 const otherBizId = 'div[class="dropdown-menu show"] .list-group > div:first-child'
 const targetBizId = 'div[class="dropdown-menu show"] .list-group > div:last-child .list'
 //loai ticket
 const typeTicketBtn = 'input[name="type_ticket"]'
-const typeTicketSearchBar = 'input[name="type_ticket"] input[placeholder="Tìm kiếm"]'
 const typeTicketDropdown = 'div[class="dropdown-menu show"]'
+const typeTicketSearchBar = 'div[class="dropdown-menu show"] input[placeholder="Tìm kiếm"]'
 const typeTicketList = 'div[class="dropdown-menu show"] .list-type'
 const recommendedTypeTicket = 'div[class="dropdown-menu show"] .list-type > div:first-child'
 const otherTypeTicket = 'div[class="dropdown-menu show"] .list-type > div:last-child'
@@ -25,12 +25,13 @@ const iframe = 'iframe[title="Bộ soạn thảo văn bản có định dạng, 
 const attachBtn = 'a[class="btn-add-file d-inline-flex flex-column align-items-center btn-open-upload-file2"]'
 //xuat hien man upload file
 const attachWindow = '#modalUploadFile3 div[class="modal-content"]'
-const uploadBtn = '#modalUploadFile3 div[class="modal-body"] input'
+const uploadBtn = '#modalUploadFile3 div[class="modal-body"] label img'
+const uploadInput = '#modalUploadFile3 div[class="modal-body"] label input'
 const uploadedFileName = '.list-file-selected div[class="d-flex justify-content-between w-100"] > div[class="name"]'
 const totalFileUploaded = '.title .count-select'
 const selectedFileList = 'div[class="row list-select"]'
 const deletedBtn = 'a[class="btn-remove d-flex"]'
-const confirmUploadBtn = 'button[class="btn btn-bg-b btn-bizfly btn-submit-add-file"]'
+const confirmUploadBtn = 'button[class="btn btn-bg-b btn-bizfly btn-submit-add-file "]'
 const cancelUploadBtn = 'button[class="btn btn-bg-w btn-bizfly closeFileHeader"]'
 //quay tro lai man tao ticket moi
 const attachedFileName = 'div[class="list-file-0 full list-file-upload   row"] div[class="name"]'
@@ -65,7 +66,7 @@ const expireDateCancelBtn = 'div[class="d-flex justify-content-end my-3"] a[clas
 const expireDateSaveBtn = 'div[class="d-flex justify-content-end my-3"] a[class="btn-bg-w btn-bizfly mr-3 bl-cancel-choose-end-date-create-ticket"] ~ a'
 //quay tro lai man tao ticket moi 
 const expireDateField = 'input[name="expire_time_ticket"]'
-const priorityField = 'div[class="form-group do_uu_tien"] span[class="select2-selection select2-selection--single bizfly-single-selection"]' 
+const priorityField = 'div[class="form-group do_uu_tien"] span[class="select2-selection select2-selection--single bizfly-single-selection"]'
 const priorityList = '#select2-priority_ticket-results'
 const priortiyOptions = '#select2-priority_ticket-results > li'
 const createNewTicketBtn = 'button[class="btn btn-bizfly btn-create-business createdTicket"]'
@@ -120,7 +121,7 @@ export class BizTicketPage {
         return typeTicketSearchBar
     }
 
-    get getTypeTicketDropdow() {
+    get getTypeTicketDropdown() {
         return typeTicketDropdown
     }
 
@@ -144,9 +145,149 @@ export class BizTicketPage {
         return ticketName
     }
 
-    
+    get getIframe() {
+        return iframe
+    }
 
+    get getIFrameTextField() {
+        return iFrameTextField
+    }
 
+    get getAttachBtn() {
+        return attachBtn
+    }
+
+    get getAttachWindow() {
+        return attachWindow
+    }
+
+    get getUploadBtn() {
+        return uploadBtn
+    }
+
+    get getUploadInput() {
+        return uploadInput
+    }
+
+    get getUploadedFileName() {
+        return uploadedFileName
+    }
+    get getTotalFileUploaded() {
+        return totalFileUploaded
+    }
+    get getSelectedFileList() {
+        return selectedFileList
+    }
+    get getDeleteBtn() {
+        return deletedBtn
+    }
+    get getConfirmUploadBtn() {
+        return confirmUploadBtn
+    }
+    get getCancelUploadBtn() {
+        return cancelUploadBtn
+    }
+    get getAttachedFileName() {
+        return attachedFileName
+    }
+    get getRemoveBtn() {
+        return removeBtn
+    }
+    get getAddLinkTextBtn() {
+        return addLinkTextBtn
+    }
+    get getInputField() {
+        return inputField
+    }
+    get getSaveBtn() {
+        return saveBtn
+    }
+    get getCancelAddLinkTextBtn() {
+        return cancelAddLinkTextBtn
+    }
+    get getHandlerListBtn() {
+        return handlerListBtn
+    }
+    get getHandlerList() {
+        return handlertList
+    }
+    get getUserSelectOption() {
+        return userSelectOption
+    }
+    get getEmailOfSelectedUser() {
+        return emailOfSelectedUser
+    }
+
+    get getEmailDisplayAfterSelected() {
+        return emailDisplayAfterSelected
+    }
+
+    get getExpireDateInput() {
+        return expireDateInput
+    }
+    get getExpireDateWindow() {
+        return expireDateWindow
+    }
+    get getSelectedExpireDate() {
+        return selectedExpireDate
+    }
+    get getSelectTimeBox() {
+        return selectTimeBox
+    }
+    get getSelectHrBox() {
+        return selectHrBox
+    }
+    get getSelectMinBox() {
+        return selectMinBox
+    }
+    get getReminderTimeTickBox() {
+        return reminderTimeTickBox
+    }
+    get getReminderTimeField() {
+        return reminderTimeField
+    }
+    get getReminderTimeLiist() {
+        return reminderTimeList
+    }
+    get getReminderTimeOptions() {
+        return reminderTimeOptions
+    }
+    get reminderProgressTickBox() {
+        return remiderProgressTickBox
+    }
+    get getReminderProgressField() {
+        return reminderProgressField
+    }
+    get getReminderProgressList() {
+        return reminderProgressList
+    }
+    get getReminderProgressOptions() {
+        return reminderProgressOptions
+    }
+    get getExpireDateCancelBtn() {
+        return expireDateCancelBtn
+    }
+    get getExpireDateSaveBtn() {
+        return expireDateSaveBtn
+    }
+    get getExpireDateField() {
+        return expireDateField
+    }
+    get getPriorityField() {
+        return priorityField
+    }
+    get getPriorityList() {
+        return priorityList
+    }
+    get getPriortiyOptions() {
+        return priortiyOptions
+    }
+    get getCreateNewTicketBtn() {
+        return createNewTicketBtn
+    }
+    get getCancelCreateNewTicketBtn() {
+        return cancelCreateNewTicketBtn
+    }
 }
 
 
